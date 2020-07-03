@@ -7,7 +7,7 @@ The Mastodon is an interesting blaster because of its unique combination of full
 Without a Bluetooth connection the blaster's operation is changed slightly:
 * After firing 24 darts the blaster automatically stops shooting until the triggers are released and pressed again
 * No dart will be fired until the wheels have had a second to spin up
-* An RGB LED on the top of the blaster signals that the wheels have spun up (green), an error has occurred (blinking red), or a Bluetooth connection is active (blue)
+* An RGB LED on the top of the blaster signals that the wheels have spun up (green), a safety fault has occurred (blinking red), or a Bluetooth connection is active (blue)
 
 Connecting to the blaster via Bluetooth adds the following functionality:
 * The blaster's ammo count can be set and a notification can be sent after each dart is fired
@@ -15,6 +15,14 @@ Connecting to the blaster via Bluetooth adds the following functionality:
 * Both triggers can be individually overridden
 * Both triggers can be locked out
 * Haptic feedback can be initiated for a specified amount of time
+
+The blaster's safety mechanisms still function normally. Attemping to fire when either of these conditions is present will result in a safety fault:
+* The jam door is open
+* The drum is removed
+
+If a safety fault occurs then the LED will blink red for 30 seconds before the blaster turns off. Rectifying the fault condition and pressing the triggers will reset it.
+
+Although the blaster's wiring has been changed signficantly, the original switches and triggers remain. The plastic housing has had holes drilled into it to mount PCBs (via standoffs) and install the LED.
 ### Building and flashing
 This project is built from the v1.2.0 tag of [nRF Connect SDK](https://www.nordicsemi.com/Software-and-tools/Software/nRF-Connect-SDK). The recommended project location is "nrf/samples/bluetooth/neRF".
 ### Building and flashing on nRF52840 dongle
