@@ -22,7 +22,7 @@ The blaster's safety mechanisms still function normally. Attemping to fire when 
 
 If a safety fault occurs then the LED will blink red for 30 seconds before the blaster turns off. Rectifying the fault condition and pressing the triggers will reset it. The safety features can be disabled during development via CONFIG_NERF_SAFETY_FEATURES_ENABLED in the project file.
 
-Although the blaster's wiring has been changed signficantly, the original switches and triggers remain. The plastic housing has only had holes drilled into it to mount PCBs (via standoffs) and install the LED. The bipod in the photo is off-the-shelf and attaches to the blaster's "tactical rail" using a picatinny rail adapter.
+Although the blaster's wiring has been changed signficantly, the original switches and triggers remain. The only modifications to the plastic housing are holes that were drilled to mount two PCBs (via standoffs), a vibration motor, and an LED. The bipod in the photo is off-the-shelf and attaches to the blaster's "tactical rail" using a picatinny rail adapter.
 ### Building and flashing
 This project is built from the v1.2.0 tag of [nRF Connect SDK](https://www.nordicsemi.com/Software-and-tools/Software/nRF-Connect-SDK). The recommended project location is "nrf/samples/bluetooth/neRF".
 ### Building and flashing on nRF52840 dongle
