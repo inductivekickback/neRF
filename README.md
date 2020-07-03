@@ -14,7 +14,7 @@ Connecting to the blaster via Bluetooth adds the following functionality:
 * Both triggers can be locked out
 * Haptic feedback can be initiated for a specified amount of time
 ### Building and flashing
-This project is built from the v1.2.0 tag of [nRF Connect SDK](https://www.nordicsemi.com/Software-and-tools/Software/nRF-Connect-SDK).
+This project is built from the v1.2.0 tag of [nRF Connect SDK](https://www.nordicsemi.com/Software-and-tools/Software/nRF-Connect-SDK). The recommended project location is "nrf/samples/bluetooth/neRF".
 ### Building and flashing on nRF52840 dongle
 Enabling the log and USB console can prevent the application from starting if there is no USB
 host (i.e. if running from the blaster's batteries instead of a USB port).
