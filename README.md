@@ -33,9 +33,9 @@ Then generate a DFU package:
 ```
 $ nrfutil pkg generate --hw-version 52 --sd-req=0x00 --application build/zephyr/zephyr.hex --application-version 1 nerf.zip
 ```
-Press the reset switch while plugging in dongle to enter bootloader (red LED will pulse)
+Press the reset switch while plugging in dongle to enter bootloader (the red LED will start pulsing).
 
-And perform the DFU:
+Finally, perform the DFU:
 ```
 $ nrfutil dfu usb-serial -pkg nerf.zip -p /dev/ttyACM0
 ```
