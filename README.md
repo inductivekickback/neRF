@@ -1,4 +1,4 @@
-Augment the [Nerf Mega Mastodon](https://nerf.fandom.com/wiki/Mega_Mastodon) blaster with a [Nordic nRF52840 dongle](https://www.nordicsemi.com/Software-and-tools/Development-Kits/nRF52840-Dongle), RGB LED, and vibration motor so it becomes fly-by-wire and can optionally be controlled over Bluetooth. Without a Bluetooth connection the blaster's original operation is essentially unchanged.
+The purpose of this project is to augment the [Nerf Mega Mastodon](https://nerf.fandom.com/wiki/Mega_Mastodon) blaster with a [Nordic nRF52840 dongle](https://www.nordicsemi.com/Software-and-tools/Development-Kits/nRF52840-Dongle), RGB LED, and vibration motor so it becomes fly-by-wire and can optionally be controlled over Bluetooth. Without a Bluetooth connection the blaster's original operation is essentially unchanged.
 
 ![Finished Nerf Mega Mastodon](https://user-images.githubusercontent.com/6494431/86424781-495b6a00-bc98-11ea-8b64-5fb6aaad2a97.jpg)
 ### About
