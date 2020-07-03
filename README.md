@@ -11,7 +11,7 @@ Without a Bluetooth connection the blaster's operation is changed slightly:
 
 Connecting to the blaster via Bluetooth adds the following functionality:
 * The blaster's ammo count can be set and a notification can be sent after each dart is fired
-* Three selective firing modes are available: single-shot, three-round burst, and fully automatic
+* Three selective firing modes are available: single-shot, three-dart burst, and fully automatic
 * Both triggers can be individually overridden
 * Both triggers can be locked out
 * Haptic feedback can be initiated for a specified amount of time
