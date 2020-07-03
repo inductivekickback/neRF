@@ -1,0 +1,12 @@
+menu "neRF"
+config NERF_SAFETY_FEATURES_ENABLED
+	bool "Safety features enabled"
+	default y
+	help
+	  Shut down if jam door is open or drum is not detected.
+
+endmenu
+
+menu "Zephyr Kernel"
+source "$ZEPHYR_BASE/Kconfig.zephyr"
+endmenu
