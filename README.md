@@ -16,7 +16,7 @@ west build -b nrf52840_pca10059 -- -DOVERLAY_CONFIG=usb_console.conf
 Then generate a DFU package:
 nrfutil pkg generate --hw-version 52 --sd-req=0x00 --application build/zephyr/zephyr.hex --application-version 1 nerf.zip
 
-Press reset switch while plugging in dongle to enter bootloader (red LED will pulse)
+Press the reset switch while plugging in dongle to enter bootloader (red LED will pulse)
 
 And perform the DFU:
 nrfutil dfu usb-serial -pkg nerf.zip -p /dev/ttyACM0
