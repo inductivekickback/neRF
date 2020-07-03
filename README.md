@@ -1,6 +1,6 @@
 # neRF
 Augments the Nerf Mega Mastodon blaster with a Nordic nRF52840, RGB LED, and vibration motor so it
-becomes fly-by-wire and can optionally be controlled over BT. Without a BT connection the
+becomes fly-by-wire and can optionally be controlled over Bluetooth. Without a Bluetooth connection the
 blaster's original operation is essentially unchanged.
 
 # Building and flashing on nRF52840 dongle
