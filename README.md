@@ -1,4 +1,4 @@
-The purpose of this project is to augment the [Nerf Mega Mastodon](https://nerf.fandom.com/wiki/Mega_Mastodon) blaster with a [Nordic nRF52840 dongle](https://www.nordicsemi.com/Software-and-tools/Development-Kits/nRF52840-Dongle), RGB LED, and vibration motor so it becomes fly-by-wire and can optionally be controlled over Bluetooth. Without a Bluetooth connection the blaster's original operation is essentially unchanged.
+The purpose of this project is to augment the [Nerf Mega Mastodon](https://nerf.fandom.com/wiki/Mega_Mastodon) blaster with a [Nordic nRF52840 dongle](https://www.nordicsemi.com/Software-and-tools/Development-Kits/nRF52840-Dongle), RGB LED, and vibration motor so it becomes fly-by-wire and can optionally be controlled over Bluetooth. Without a Bluetooth connection the blaster's original operation is essentially unchanged. Schematics are photos are posted [here](http://inductivekickback.blogspot.com/2020/08/nerf.html).
 
 ![Finished Nerf Mega Mastodon](https://user-images.githubusercontent.com/6494431/86424781-495b6a00-bc98-11ea-8b64-5fb6aaad2a97.jpg)
 ### About
@@ -22,7 +22,7 @@ The blaster's safety mechanisms still function normally. Attemping to fire when 
 
 If a safety fault occurs then the LED will blink red for 30 seconds before the blaster turns off. Rectifying the fault condition and pressing the triggers will reset it. The safety features can be disabled during development via CONFIG_NERF_SAFETY_FEATURES_ENABLED in the project file.
 
-Although the blaster's wiring has been changed signficantly, the original switches and triggers remain. The only modifications to the plastic housing are holes that were drilled to mount two PCBs (via standoffs), a vibration motor, and an LED. The bipod in the photo is off-the-shelf and attaches to the blaster's "tactical rail" using a picatinny rail adapter.
+Although the blaster's wiring has been changed significantly, the original switches and triggers remain. The only modifications to the plastic housing are holes that were drilled to mount two PCBs (via standoffs), a vibration motor, and an LED. The bipod in the photo is off-the-shelf and attaches to the blaster's "tactical rail" using a picatinny rail adapter.
 ### Building and flashing
 This project is built from the v1.2.0 tag of [nRF Connect SDK](https://www.nordicsemi.com/Software-and-tools/Software/nRF-Connect-SDK). The recommended project location is "nrf/samples/bluetooth/neRF".
 ### Building and flashing on nRF52840 dongle
